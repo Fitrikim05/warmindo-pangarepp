@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    overflow-x: hidden;
+    background: #3b141c;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* navbar Style */
+ul {
+    list-style: none;
+    padding: none;
+}
+
+ul li a:hover,
+.Active {
+    background: #f3961c;
+    border-radius: 30px;
+}
+
+nav {
+    background: #3b141c;
+}
+
+.Food {
+    display: block;
+    cursor: pointer;
+    padding: 4px 8px;
+    outline: none;
+    border: none;
+    border-radius: 0;
+
+}
+
+.Food .line {
+    width: 1.Srem;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+    transition: .5s ease;
+
+}
+
+.Food:hover .line {
+    background: #f3961c;
+}
+
+/* Home Selection Style */
+.home {
+    background: #3b141c;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.home .title {
+    color: #f3961c;
+    font-size: 3rem;
+}
+
+/* About Section Style */
+.about {
+    background: #3b141c;
+}
+
+.aboutImage img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about .title {
+    font-size: 2.3rem;
+    font-weight: 550;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.about .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    width: 20%;
+    height: 6px;
+    background: #f3961c;
+}
+
+/* Menu Section Style */
+.menu {
+    background: #3b141c;
+}
+
+.menuImage,
+.menuImage img {
+    margin: 0 auto;
+    max-width: 80%;
+    cursor: pointer;
+}
+
+.menu .menu-title::after {
+    content: "";
+    position: absolute;
+    left: 45%;
+    width: 10%;
+    height: 6px;
+    background: #f3961c;
+}
+
+.menu .showMenu {
+    font-size: 1.5rem;
+    padding: .8rem 1.2rem;
+}
+
+.menu .price {
+    color: #f3961c;
+}
+
+/* Testimonials section Style */
+.carousel-indicators [data-bs-target] {
+    background-color: #3b141c;
+}
+
+.Testimonials-title::after {
+    content: "";
+    position: absolute;
+    left: 43%;
+    width: 15%;
+    height: 6px;
+    background: #f3961c;
+}
+
+/* Gallery Section Style */
+.gallery {
+    background: #3b141c;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Contanct Section Style */
+.cotanct .item h6 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.contanct .item p {
+    font-size: 1rem;
+    color: #748182;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+
+}
+
+input[type="text"],
+input[type="email"],
+.form-group textarea {
+    border: none;
+    outline: none;
+    background-color: #d3d3d3;
+    padding: 10px;
+}
+
+.contanct .item .icon-circle {
+    margin-bottom: 15px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 60px;
+    background: #f7f5f5;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.icon-circle i {
+    transition: all 0.5s;
+    color: #fff;
+}
+
+.item p,
+.item h6 {
+    transition: all 0.5s;
+
+}
+
+.item:hover i,
+.item:hover h6,
+.item:hover p {
+    color: #f3961c;
+}
+
+.item:hover .icon-circle {
+    background: #000;
+}
+
+.Submit {
+    background: #6e0416;
+    color: #fff;
+    transition: all 0.5s;
+
+}
+
+.Submit:hover {
+    background: #591422;
+    color: #fff;
+}
+
+/* footer Style */
+.copyright img {
+    background: #3b141c;
+    background-image: linear-gradient(#3b141c6a, #3b141c62), url(https://i.ibb.co.com/RphTbw6K/Chat-GPT-Image-May-2-2025-12-02-48-PM-removebg-preview-1.png);
+    color: #fff;
+}
+
+.copyright img {
+    width: 200px;
+}
+
+/* Scroll To Top 8tn */
+.scrollTop {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #3b141c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5%;
+    padding: 0px 10px;
+    transition: .3s ease;
+}
+
+.scrollTop:hover {
+    background-color: #000;
+}
+
+.scrollTop i {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 25px;
+    transition: .3s ease;
+
+    color: #fff;
+}
+
+.scrollTop:hover i {
+    color: #f3961c;
+}
+
+/* Some Media Query */
+@media (width <768px) {
+    .home {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .home .homeImages {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
